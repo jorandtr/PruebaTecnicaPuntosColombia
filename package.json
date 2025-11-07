@@ -1,0 +1,17 @@
+{
+  "name": "playwright-cucumber-screenplay",
+  "version": "1.0.0",
+  "description": "Proyecto con Playwright + Cucumber + Screenplay en TypeScript",
+"scripts": {
+  "test": "cucumber-js --require-module ts-node/register --require steps/**/*.ts --format json:reports/cucumber-report.json",
+  "report": "ts-node generate-report.ts"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.49.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
+

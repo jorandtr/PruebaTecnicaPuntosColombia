@@ -1,0 +1,43 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+out/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor config
+.vscode/
+.idea/
+
+# Playwright artifacts
+playwright-report/
+test-results/
+*.png
+*.zip
+
+# Coverage
+coverage/
+
+# Environment files
+.env
+.env.*
+
+# Reports and screenshots
+reports/
+screenshots/
+
+# Optional: ignore all generated files in reports but allow config
+reports/**/*
+!reports/config.json
