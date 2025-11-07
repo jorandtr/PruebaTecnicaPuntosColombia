@@ -58,11 +58,15 @@ export class paginaPrincipal {
   }
 
   async destinoViajeSelect(destino: string) {
-  return this.page.getByRole('listitem').filter({ hasText: destino });
+  return this.page.getByRole('listitem', { name: destino });
   }
 
   async validaDestino(destino: string) {
   return this.page.getByRole('heading', { name: destino}); 
+  }
+
+  get openDestino() {
+  return this.page.locator('input[readonly][role="input"][value="Launch"]');
   }
 
   get bookButton() {

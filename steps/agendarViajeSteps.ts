@@ -19,8 +19,8 @@ let page: Page;
 let actor: Actor;
 
 Before(async function () {
-  browser = await chromium.launch({ headless: false });
-  const context = await browser.newContext();
+  browser = await chromium.launch({ headless: false, args: ['--start-maximized'] });
+  const context = await browser.newContext({ viewport: null });
   page = await context.newPage();
 
   // Crear actor y darle la habilidad de navegar con Playwright

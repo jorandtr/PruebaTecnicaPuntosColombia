@@ -6,4 +6,4 @@ test('abrir portal de viajes para inspeccionar elementos', async ({ page }) => {
 
   // 🔥 detiene la ejecución y abre el inspector visual
   await page.pause();
-});
+}); 

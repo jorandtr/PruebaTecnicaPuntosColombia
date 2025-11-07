@@ -18,14 +18,10 @@ export class FiltrarRangoPrecios {
     const { page } = actor.abilityTo(navegaALaWeb);
     const form = new paginaPrincipal(page);
 
-    await form.precioMinInput.waitFor({ state: 'visible' });
     await form.precioMinInput.clear();
     await form.precioMinInput.fill(this.data.precio_min);
-      
-    await form.precioMaxInput.waitFor({ state: 'visible' });
     await form.precioMaxInput.clear();
     await form.precioMaxInput.fill(this.data.precio_max);
     await form.precioMaxInput.press('Enter');
-
   }
 }
