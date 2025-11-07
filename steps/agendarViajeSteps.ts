@@ -107,5 +107,5 @@ When('finaliza el checkout',
 Then('el sistema deberia mostrar el mensaje {string}', 
   async function (mensajeEsperado: string) {
     const mensaje = await actor.ask(Confirmacion.mensaje(actor));
-      expect(mensaje?.trim()).toEqual(mensajeEsperado); //mensaje? verifica si mensaje no es null ni undefined trim elimina espacios, satlos de linea etc.
+      expect(mensaje?.trim()).toEqual(mensajeEsperado); //mensaje? verifica si mensaje no es null ni undefined //trim elimina espacios, satlos de linea etc.
 });

@@ -21,7 +21,6 @@ export class CargarArchivo {
     await page.waitForTimeout(1000);
     const rutaAbsoluta = path.resolve(this.data.archivo);
     await form.archivoInput.setInputFiles(rutaAbsoluta);
-    await page.waitForTimeout(1000);    
-        
+    await page.waitForTimeout(1000);           
   }
 }

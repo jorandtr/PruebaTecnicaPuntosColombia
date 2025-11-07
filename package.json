@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Proyecto con Playwright + Cucumber + Screenplay en TypeScript",
 "scripts": {
-  "test": "cucumber-js --require-module ts-node/register --require steps/**/*.ts --format json:reports/cucumber-report.json",
+  "test": "cucumber-js --require-module ts-node/register --require steps/**/*.ts --format json:reports/cucumber-report.json --parallel 4",
   "report": "ts-node generate-report.ts"
   },
   "devDependencies": {
